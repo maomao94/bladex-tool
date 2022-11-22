@@ -1,0 +1,16 @@
+# seata配置
+seata:
+  tx-service-group: ${blade.name}-group
+  registry:
+    type: file
+  config:
+    type: file
+  service:
+    grouplist:
+      default: 127.0.0.1:8091
+    vgroup-mapping:
+      blade-tx-group: default
+    disable-global-transaction: false
+  client:
+    rm:
+      report-success-enable: false

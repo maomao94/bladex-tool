@@ -1,0 +1,12 @@
+#sleuth配置
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+
+#zipkin启动报错无法访问的解决方法
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
